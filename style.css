@@ -61,31 +61,41 @@ main {
     }
 }
 
-@media(max-width: 450px) {
+@media (max-width: 450px) {
     main {
         height: 100dvh;
-        margin-top: 60px; /*Por que caralhos 1rem na margin nao é igual 1rem no gap? */
-        margin-bottom: 0px; /* E o margin não funciona aqui S2 Não consigo fazer com que o main apanhe todas as imagens. Talvez seja pelo tamanho de algumas img*/
-        grid-auto-rows: 15rem;
-        grid-auto-columns: 1fr;
+        margin-top: 30px; 
+        grid-auto-rows: max-content;
+        grid-auto-columns: 0.95fr;
+        justify-content: center;
         grid-template-areas: 
         'box2'
         'box4'
-        'box6'
+        'box5' 
         'box3'
         'box8'
         'box7'
         'box1'
-        'box5'
+        'box6'
         ;
-        /* ^CONCERTAR A ORDEM. */
+        overflow-y: auto;
+    }
+
+    .box2 {
+        padding: 50px;
+    }
+
+    .box4 {
 
     }
 
     img {
-        display: none; /* Meu último teste antes de kitar, as 13:50 de 23/01/2025 */ 
+        max-width: 100%;
     }
-}
+
+    .box6 img {
+        width: 40%;
+}}
 
 main > div {
     display: flex;
@@ -270,6 +280,10 @@ main > div {
 
 .txt-dec-2 {
     color: var(--ColorB500);
+}
+
+.line-break {
+    display: block;
 }
 
 /* */
