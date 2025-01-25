@@ -85,10 +85,6 @@ main {
         padding: 50px;
     }
 
-    .box4 {
-
-    }
-
     img {
         max-width: 100%;
     }
@@ -282,7 +278,7 @@ main > div {
     color: var(--ColorB500);
 }
 
-.line-break {
+.br {
     display: block;
 }
 
