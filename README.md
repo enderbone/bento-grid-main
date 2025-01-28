@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Pages](https://your-solution-url.com)
+- Solution URL: [Github Pages](https://enderbone.github.io/bento-grid-main/)
 - Live Site URL: [Github](https://github.com/enderbone/bento-grid-main)
 
 ## My process
