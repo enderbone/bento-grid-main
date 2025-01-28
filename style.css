@@ -80,6 +80,7 @@ main {
     'box6 box7 box8 box8'
     ;
 
+    overflow-y: auto;
     padding: 10px;
 }
 
@@ -275,14 +276,52 @@ main > div {
 
 @media(max-width: 660px) {
     main {
-        grid-auto-columns: 0.5fr;
-        grid-auto-rows: 300px;
+        grid-auto-rows: max-content;
+        grid-auto-columns: 0.95fr;
         grid-template-areas: 
         'box1 box2'
         'box3 box4'
         'box5 box6'
         'box7 box8'
         ;
+    }
+
+    main > div {
+        padding: 10px;
+    }
+
+    main > div > p,h1 {
+        width: auto !important;
+    }
+
+    .box3 img {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        object-position: 0%;
+        width: 80%;
+    }
+
+    .box3 p {
+        font-size: 1rem;
+    }
+
+    .box4 img {
+        width: 100%;
+    }
+
+    .box4 h1 {
+        font-size: 1.5rem;
+    }
+
+    .box5-img {
+        width: 100%;
+        background-size: cover;
+        height: 70%;
+    }
+
+    .box6 img {
+        margin-top: 10px;
+        width: 80%;
     }
 }
 
@@ -303,8 +342,6 @@ main > div {
         'box1'
         'box6'
         ;
-        overflow-y: auto;
-        margin: auto;
     }
 
     .low-br {
